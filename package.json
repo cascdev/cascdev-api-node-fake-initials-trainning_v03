@@ -1,7 +1,7 @@
 {
-  "name": "projeto1_alex",
+  "name": "projeto3_alex",
   "version": "2.0.0",
-  "description": "Aqui apenas separamos as rotas e os dados em pastas.",
+  "description": "Aqui apenas separamos as rotas dos controllers.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

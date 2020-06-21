@@ -8,7 +8,7 @@ Fist, after to make download this, into on directory run on your bash `npm insta
 
 ## Development server
 
-Run `node index` or `nodemon` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
+Run `node server` or `nodemon` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
 
 ## USING THE POSTMAN CLIENT 
 
