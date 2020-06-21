@@ -1,24 +1,13 @@
 const express = require ('express')
 const router = express.Router()
 
-let alunosLista = require('../db/mock-alunos.db')
+//let alunosLista = require('../db/mock-alunos.db')
 
-router.get( '/', ( req, res ) => res.status(200).json(
-	{ 
-		ok: true,
-		msg: "Lista de Todos os Alunos",
-		lista: alunosLista
- 	}))
+const _ctrl = require('../controllers/alunos.controller')
 
-router.get('/:matricula', ( req, res ) => {	
-	
-	const matricula = req.params.matricula  
-	
-	const alunoEncontrado = alunosLista.filter( a => a.matricula == matricula )  
-		
-	return res.status(200).json({ ok: true, aluno:alunoEncontrado })
-	
-})
+router.get( '/', _ctrl.listarTodos)
+
+router.get('/:matricula', _ctrl.listarAlunoPorMatricula)
  
 router.post('/',  ( req, res ) => {
 
