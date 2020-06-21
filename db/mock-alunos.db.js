@@ -5,6 +5,8 @@ let alunosLista = [
 	{nome: "Alex", matricula: "201807854709"},
     {nome: "Adriele", matricula: "202004567599"}
     
-];
+]
 
 module.exports = alunosLista
+
+
